@@ -17,4 +17,9 @@ class Post(models.Model):
         self.save()
 
     def __str__(self):
-        return self.title
+        return "{} ### {}".format(self.title, self.text)
+
+#
+# if __name__=="__main__":
+#     post=Post.objects.filter(title="hello world")
+#     print(post)
